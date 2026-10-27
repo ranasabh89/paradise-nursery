@@ -1,0 +1,25 @@
+:root { --green:#2f6b4f; --leaf:#e8f1ea; --ink:#1d2b24; }
+body { margin:0; font-family:Georgia, 'Times New Roman', serif; color:var(--ink); background:var(--leaf); }
+.landing { min-height:100vh; background:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600') center/cover no-repeat; }
+.landing-overlay { min-height:100vh; box-sizing:border-box; padding:4rem 1.5rem; text-align:center; color:#fff; background:rgba(20,40,30,.6); }
+.landing h1 { font-size:3.2rem; margin:0 0 .5rem; }
+.about-us { max-width:560px; margin:3rem auto 0; text-align:left; line-height:1.6; }
+.btn { border:none; border-radius:6px; padding:.6rem 1.2rem; font-size:1rem; color:#fff; cursor:pointer; }
+.btn:disabled { opacity:.5; cursor:not-allowed; }
+.btn-primary { background:#8B5CF6; }
+.btn-success { background:#F59E0B; }
+.btn-danger { background:#c0392b; }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:.8rem 1.5rem; background:var(--green); color:#fff; position:sticky; top:0; }
+.nav-links button { background:none; border:none; color:#fff; font-size:1rem; margin-left:1rem; cursor:pointer; }
+.nav-links button:focus-visible, .btn:focus-visible { outline:3px solid #fff; outline-offset:2px; }
+.cart-count { background:#fff; color:var(--green); border-radius:999px; padding:0 .5rem; margin-left:.3rem; }
+.products, .cart { max-width:1100px; margin:0 auto; padding:1.5rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; }
+.card { background:#fff; padding:1rem; border-radius:8px; text-align:center; }
+.card img { width:100%; max-width:160px; border-radius:6px; }
+.desc { font-size:.9rem; margin:.2rem 0; } .price { font-weight:bold; }
+.cart-row { display:flex; gap:1rem; align-items:center; background:#fff; padding:1rem; border-radius:8px; margin-bottom:1rem; flex-wrap:wrap; }
+.cart-row img { width:90px; border-radius:6px; } .cart-info { flex:1; }
+.qty { display:flex; align-items:center; gap:.8rem; }
+.cart-actions { display:flex; gap:1rem; }
+@media (prefers-reduced-motion:reduce){ * { transition:none !important; } }
